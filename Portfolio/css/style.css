@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:ital,wght@0,300;0,500;1,200;1,300;1,400&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+    font-size: 62.5%;    /*10px==100*10/16==62.5*/
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+.header{
+    height: 95vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/header-image.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+
+}
+.header .navbar{
+    overflow: hidden;
+    padding: 1rem;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar .logo{
+    float: left;
+}
+
+/* -------------------Utility Classes-------------- */
+.lg-heading{
+    font-size: 3.5rem;
+      
+}
+.md-heading{
+    font-size: 1.5rem;
+      
+}
+.text-red{
+    color:#e63946;
+}
+.text-light{
+    color:#f4f4f4;
+}
+.text-black{
+    color:#333;
+}
+.text-grey{
+    color:#555555;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 600;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 10em;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+.btn-secondary{
+    border: 2px solid #e63946 ;
+    color: #e63946;
+    border-radius: 1.5em;
+    background: #fff;
+    
+}
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+}
+
+
+
+
+.navbar .nav-items{
+    float: right;
+    list-style-type: none;
+    margin-top: 1rem;
+}
+.navbar .nav-items .nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item{
+    display: inline;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar a{
+    padding-bottom:0.3rem ;
+}
+.navbar a:hover{
+    border-bottom: 1px solid #fff;
+}
+p,li,a{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+
+}
+h1,h2,h3,a{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2))
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.header-content p{
+    text-transform: uppercase;
+
+}
+
+
+/*#########################SHOWCASE SECTION STYLING######################33*/
+
+.showcase{
+    background-color: #ddd;
+    padding: 100px 0;
+}
+.row{
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box,.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row1 .text-box,.row2 .img-box{
+    float: right;
+    width: 50%;
+    
+
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    height: 100%;
+    padding-left: 3rem;
+    /* text-align: center; */
+    font-weight: 500;
+
+}
+.row .img-box img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.row h2{
+    text-transform: uppercase;
+}
+.row a{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* <<<<-----------------------------Contactus Page------------------------> */
+
+.form{
+    width: 500px;
+    height: 500px;
+    font-size: 1.875rem;
+    background-color: #aaa
+}
+.parentform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
